@@ -4,16 +4,16 @@ function guess(){
     true_ans=$(ls -l |grep "^-"|wc -l)
     while true;
     do
-        echo "pleas enter your guess"
+        echo "please enter your guess number"
         read  number
         if [ $number -lt $true_ans ]
         then
-            echo "your guess is Less then the true number"
+            echo "your guess number is Less then the true number"
         elif [ $number -gt $true_ans ]
         then
-            echo "your guess is Greater then the true number"
+            echo "your guess number is Greater then the true number"
         else
-            echo " congratulation,you are right!"
+            echo "you are correct!"
         break;
         fi
     done
